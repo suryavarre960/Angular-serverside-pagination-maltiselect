@@ -1,0 +1,27 @@
+<div mat-dialog-title>
+    <h1 style="text-align: center;">User Details</h1>
+    <hr/>
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <div class="listview"><b>Name:</b> {{viewData.name}}</div>
+            <div class="listview"><b>Tech:</b> {{viewData.tech}}</div>
+        </div>
+        <div class="row">
+            <div class="listview"><b>Id:</b> {{viewData._id}}</div>
+            <div class="listview"><b>Sub:</b> {{viewData.sub}}</div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="listview"><b>City:</b> {{viewData.address.city}}</div>
+            <div class="listview"><b>zipcode:</b> {{viewData.address.zipcode}}</div>
+        </div> -->
+
+        
+
+       <div mat-dialog-actions align="end">
+        <button mat-raised-button type="button" color="primary" [mat-dialog-close]="false">Cancel</button>
+       </div>
+
+    </div>
+    
+</div>
